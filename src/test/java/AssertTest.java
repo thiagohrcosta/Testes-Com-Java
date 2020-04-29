@@ -25,5 +25,21 @@ public class AssertTest {
     public void testAssertNotNull(){
         assertNotNull(new Object());
     }
+    
+    @Test
+    public void testAssertNotSame(){
+        assertNotSame(new Object(), new Object());
+    }
+
+    @Test
+    public void testAssertNull(){
+        assertNull(null);
+    }
+
+    @Test
+    public void testAssertSame(){
+        Integer aNumber = Integer.valueOf(768);
+        assertSame(aNumber, aNumber);
+    }
 
 }
